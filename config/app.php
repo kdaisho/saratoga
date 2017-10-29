@@ -78,8 +78,8 @@ return [
     |
     */
 
-    'locale' => 'en',
-    // 'locale' => ['en' => 'English', 'fr' => 'French'],
+    // 'locale' => 'en',
+    'locale' => ['en' => 'English', 'fr' => 'French'],
 
     /*
     |--------------------------------------------------------------------------

@@ -16,7 +16,7 @@
 // });
 
 //This line does the same as above
-// Route::view('/{locale}', 'welcome');
+// Route::view('/', 'welcome');
 
 Route::get('/{locale}', function($locale) {
     App::setLocale($locale);
