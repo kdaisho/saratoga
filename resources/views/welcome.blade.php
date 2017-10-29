@@ -10,7 +10,13 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link href="{{ URL::asset('css/app.css') }}" rel="stylesheet">
         <!-- Styles -->
+        
         <style>
             html, body {
                 background-color: #fff;
@@ -64,22 +70,14 @@
             }
         </style>
     </head>
+
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    Saratoga
+                   <h1>Saratoga</h1>
+                   <p>@lang('messages.welcome')</p>
                 </div>
 
                 <div class="links">
