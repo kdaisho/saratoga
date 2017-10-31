@@ -18,7 +18,33 @@
 //This line does the same as above
 // Route::view('/', 'welcome');
 
-Route::get('/{locale}', function($locale) {
+// Main GET routes with locale
+// Route::prefix('{locale?}')->middleware('locale')->group(function() {
+//     Route::get('/', function () {
+//         return view('index');
+//     });
+// });
+
+
+Route::get('/{locale?}', function($locale = null) {
     App::setLocale($locale);
-    return view('welcome');
+    return view('pages.welcome');
 });
+
+Route::get('/{locale?}/about', function($locale = null) {
+    App::setLocale($locale);
+    return view('pages.about');
+});
+
+Route::get('/{locale?}/contact', function($locale = null) {
+    App::setLocale($locale);
+    return view('pages.contact');
+});
+
+
+// Route::get('/{locale}', 'PagesController@getIndex');
+
+
+// Route::get('/{locale}/about', 'PagesController@getAbout');
+
+// Route::get('/{locale}/contact', 'PagesController@getContact');
