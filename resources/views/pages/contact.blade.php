@@ -11,7 +11,7 @@
 <div class="row">
 	<div class="col-md-12">
 		<h1>{{ __('messages.contact') }}</h1>
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+		<p>Contact! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 		<hr>
 		<form action="{{ url('contact') }}" method="POST">
 			{{ csrf_field() }}
