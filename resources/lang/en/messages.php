@@ -7,5 +7,4 @@ return [
     'langSwitch' => 'fr',
     'lang' => 'en',
     'home' => 'Home'
-
 ];

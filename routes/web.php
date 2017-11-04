@@ -27,20 +27,22 @@
 
 
 Route::get('/{locale?}', function($locale = null) {
-    App::setLocale($locale);
-    return view('pages.welcome');
+	App::setLocale($locale);
+	return view('pages.welcome');
 });
 
 Route::get('/{locale?}/about', function($locale = null) {
-    App::setLocale($locale);
-    return view('pages.about');
+	App::setLocale($locale);
+	return view('pages.about');
 });
 
 Route::get('/{locale?}/contact', function($locale = null) {
-    App::setLocale($locale);
-    return view('pages.contact');
+	App::setLocale($locale);
+	return view('pages.contact');
 });
 
+
+Route::post('/{locale?}/contact', 'PagesController@postContact');
 
 // Route::get('/{locale}', 'PagesController@getIndex');
 
