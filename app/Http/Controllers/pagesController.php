@@ -43,6 +43,6 @@ class PagesController extends Controller
 
 		Session::flash('success', 'Your email was sent!');
 
-		return redirect('/');
+		return redirect('/en');
 	}
 }
