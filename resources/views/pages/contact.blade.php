@@ -11,9 +11,10 @@
 <div class="row">
 	<div class="col-md-12">
 		<h1>{{ __('messages.contact') }}</h1>
-		<p>Contact2! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+		<p>Contact3! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 		<hr>
-		<form action="/{{ __('messages.lang') }}/contact" method="POST">
+		{{-- <form action="/{{ __('messages.lang') }}/contact" method="POST"> --}}
+		<form action="{{ url('/en/contact') }}" method="POST">
 			{{ csrf_field() }}
 			<div class="form-group">
 				<lable for="name">Name:</label>
